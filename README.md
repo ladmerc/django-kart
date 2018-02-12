@@ -10,21 +10,20 @@ Djago-Kart has been tested for Django >= 1.8
 Installation
 -----------
 
-1. Install using `pip`:
-    pip install django-kart
+1. Install using `pip install django-kart`:
 
-2. Add "cart" to your INSTALLED_APPS setting like this::
+2. Add `cart` to your `INSTALLED_APPS` setting like this::
 
-    INSTALLED_APPS = [
+    ```INSTALLED_APPS = [
         ...
         'cart',
-    ]
+    ]```
 
 3. By default, django-kart assumes a Product model named `Product`. It is advisable to set `PRODUCT_MODEL` in your settings.py:
-    PRODUCT_MODEL = 'app.model' 
+    `PRODUCT_MODEL = 'app.model'` 
 
 4. Django-kart looks for a `cart` key in session. You can overwrite this by setting `CART_SESSION_KEY` to a string:
-    CART_SESSION_KEY = 'new_key' 
+    `CART_SESSION_KEY = 'new_key'` 
 
 
 Usage
